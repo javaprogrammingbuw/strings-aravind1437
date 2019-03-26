@@ -44,6 +44,8 @@ public class Palindrome{
 		
 	
 		public static String pal(String a) {
+
+		 //This should have been merged into the other method (e.g. Taco cat should give you true)
 		
 	     a = a.toUpperCase(); // changing input to upper case
 	      
