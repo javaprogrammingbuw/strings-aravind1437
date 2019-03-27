@@ -2,15 +2,19 @@ import java.util.Scanner;
 
 //advanced
 
+
+
 public class Expand {
 	
 	public static void main(String[] args) {
-		
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.print("Enter the your string : ");
 		
 	    String a = scan.nextLine(); 
+	    
+	    System.out.println("The output is " +  StringBul(a));
+	}
 
 		//todo: take as an input a combination of characters and numbers (e.g. 2a3b5c)
 		//expand the String by printing each letter so many times as the number before the letter indicates
@@ -19,15 +23,18 @@ public class Expand {
 		//to improve your code such that you can use values greater or equal 10, eg. 10a13b22c
 		//Further modification: if a character should only be printed one time you don't need to write any number infront of that character
 		//e.g. a3b12cd5e -> abbbccccccccccccdeeeee  
-
-		//This should have been done in a method
+	    
+	    
+	    public static  String  StringBul(String a) {
+	    	
 	    
 	    StringBuilder S = new StringBuilder();
 	   
 	    
 	    int dis = 0;
 	    
-	    for (char c : a.toCharArray()) {
+	   
+		for (char c : a.toCharArray()) {
 	    	
 	        if (Character.isDigit(c)) {
 	        	
@@ -45,7 +52,7 @@ public class Expand {
 	            
 	        }
 	    }
-	    System.out.println( S.toString());
+	   return S.toString();
 	}
 	  
 	}

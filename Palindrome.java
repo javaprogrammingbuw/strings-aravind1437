@@ -18,13 +18,19 @@ public class Palindrome{
 		
 		System.out.println("The entered string is = " + a + ", is it a palindrome? " + palin(a) );
 	
-		System.out.println(pal(a));
+		//System.out.println(pal(a));
 		
 	}
 		
 	public static boolean palin(String a) {
 		
-		String c= " ";
+		 a = a.toUpperCase(); // changing input to upper case
+		  
+		 System.out.println(a);
+	      
+	     a= a.replace(" ", ""); // Removing spaces
+		
+		String c= "";
 		
 		for(int i = a.length()-1; i>= 0; i--) {
 			
@@ -43,18 +49,13 @@ public class Palindrome{
 		}
 		
 	
-		public static String pal(String a) {
-
-		 //This should have been merged into the other method (e.g. Taco cat should give you true)
+	//	public static String pal(String a) {
 		
-	     a = a.toUpperCase(); // changing input to upper case
-	      
-	     a= a.replace(" ", ""); // Removing spaces
-		
-	     return a;
+	    
+	  //   return a;
 	      
 	}
-	}
+	//}
 	
 	
 	
